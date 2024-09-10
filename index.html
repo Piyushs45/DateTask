@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Input Example</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Date Input Form</h1>
+    <form id="Form">
+        <label for="Input">Select a date:</label>
+        <input type="date" id="Input" name="Input" required>
+        
+        <label for="formatSelect">Select a format:</label>
+        <select id="formatSelect">
+            <option value="writtenFormat">5th Sep 2024</option>
+            <option value="dateFirst">05/09/2024</option>
+            <option value="monthFirst">09/05/2024</option>
+            <option value="yearFirst">2024/09/05</option>
+            <option value="notFullYear">05/09/24</option>
+        </select>
+        
+        <input type="submit" value="Clear">
+    </form>
+
+    <h2>Formatted Date:</h2>
+    <p id="formattedDate"></p>
+</body>
+</html>
